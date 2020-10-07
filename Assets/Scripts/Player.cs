@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] float health = 100f;
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float boundaryPadding = 0.5f;
     [SerializeField] GameObject lazer;
@@ -69,6 +70,25 @@ public class Player : MonoBehaviour
             GameObject newLazer = Instantiate(lazer, transform.position, Quaternion.identity) as GameObject;
             newLazer.GetComponent<Rigidbody2D>().velocity = new Vector2(0, lazerPush);
             yield return new WaitForSeconds(waitBetweenBullets);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+            ProcessHit(damageDealer);
+        }
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.getDamageAmount();
+        damageDealer.Hit();
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

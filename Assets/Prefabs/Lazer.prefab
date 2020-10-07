@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8317995545416016676}
   - component: {fileID: 5409278941448153946}
   - component: {fileID: -2996918127743406275}
-  - component: {fileID: -2553430449050867895}
   - component: {fileID: -175371035422706108}
+  - component: {fileID: -2569798928912298741}
   m_Layer: 0
   m_Name: Lazer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,25 +92,12 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.13, y: 0.37}
   m_Direction: 0
---- !u!114 &-2553430449050867895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377795313518079719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d0784eaa3c60a4fbc175190a8f8885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  push: 25
 --- !u!50 &-175371035422706108
 Rigidbody2D:
   serializedVersion: 4
@@ -132,3 +119,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-2569798928912298741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377795313518079719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051a11143ef07d042b27d9fc70151431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  explosionVFX: {fileID: 6858432526259607687, guid: 53d1f0daf0069404094ec655322e1abf,
+    type: 3}
