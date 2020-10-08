@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -808789822679296004}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48172d1344d74945860ed4c8ef259c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 100
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 2
@@ -115,6 +115,10 @@ MonoBehaviour:
   enemyLazerPush: 15
   explosionVFX: {fileID: 6858432526259607687, guid: 53d1f0daf0069404094ec655322e1abf,
     type: 3}
+  deathSFX: {fileID: 8300000, guid: 069dc9877decc974fa8c4d3750e8b30c, type: 3}
+  lazerSFX: {fileID: 8300000, guid: 82cc6936811362c4b852446fe2d76150, type: 3}
+  volume: 0.3
+  scoreOnDeath: 150
 --- !u!61 &-808789822679296004
 BoxCollider2D:
   m_ObjectHideFlags: 0

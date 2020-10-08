@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 533358037
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 993400506aa57db42b40cbd45da65d9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -131,6 +131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051a11143ef07d042b27d9fc70151431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  explosionVFX: {fileID: 6858432526259607687, guid: 53d1f0daf0069404094ec655322e1abf,
-    type: 3}
+  damageAmount: 50

@@ -99,6 +99,12 @@ MonoBehaviour:
   lazer: {fileID: 377795313518079719, guid: 0c4837410f64ee44aacdf38461593611, type: 3}
   lazerPush: 30
   waitBetweenBullets: 0.1
+  deathSFX: {fileID: 8300000, guid: 0c6e83f70bbd2a14682d845121939235, type: 3}
+  lazerSFX: {fileID: 8300000, guid: b0dd4cba461526944a07539c75a5ef6a, type: 3}
+  volume: 0.3
+  afterDeathSeconds: 2
+  explosionVFX: {fileID: 6858432526259607687, guid: 53d1f0daf0069404094ec655322e1abf,
+    type: 3}
 --- !u!61 &6261380937226979665
 BoxCollider2D:
   m_ObjectHideFlags: 0

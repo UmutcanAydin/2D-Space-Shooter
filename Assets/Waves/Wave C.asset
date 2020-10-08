@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ef6913c5b04324293be1f3d8953ef6, type: 3}
   m_Name: Wave C
   m_EditorClassIdentifier: 
-  enemy: {fileID: 9128145893326007615, guid: 4f81db7b7d0ef8c4282ce7f4d65171cd, type: 3}
+  enemy: {fileID: 9128145893326007615, guid: b7d9c12e77438244abd5425527860d98, type: 3}
   path: {fileID: 5343595976717723219, guid: f5a91669d65c5df489e91f0664c64a2d, type: 3}
   timeBetweenSpawns: 0.5
   spawnRandomFactor: 0.3
